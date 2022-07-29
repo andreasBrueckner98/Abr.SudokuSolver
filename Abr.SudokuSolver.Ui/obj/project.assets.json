@@ -1,0 +1,103 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "Abr.SudokuSolver.Logik/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Abr.SudokuSolver.Logik.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Abr.SudokuSolver.Logik.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Abr.SudokuSolver.Logik/1.0.0": {
+      "type": "project",
+      "path": "../Abr.SudokuSolver.Logik/Abr.SudokuSolver.Logik.csproj",
+      "msbuildProject": "../Abr.SudokuSolver.Logik/Abr.SudokuSolver.Logik.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "Abr.SudokuSolver.Logik >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Andreas\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Andreas\\Desktop\\C_Sharp_Projects\\Abr.SudokuSolver\\Abr.SudokuSolver.Ui\\Abr.SudokuSolver.Ui.csproj",
+      "projectName": "Abr.SudokuSolver.Ui",
+      "projectPath": "C:\\Users\\Andreas\\Desktop\\C_Sharp_Projects\\Abr.SudokuSolver\\Abr.SudokuSolver.Ui\\Abr.SudokuSolver.Ui.csproj",
+      "packagesPath": "C:\\Users\\Andreas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andreas\\Desktop\\C_Sharp_Projects\\Abr.SudokuSolver\\Abr.SudokuSolver.Ui\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Andreas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Andreas\\Desktop\\LocalNuGet": {},
+        "http://192.168.0.243:9090/nuget/Compact": {},
+        "http://192.168.0.243:9090/nuget/Customers": {},
+        "http://192.168.0.243:9090/nuget/DevExpress": {},
+        "http://192.168.0.243:9090/nuget/Graidware": {},
+        "http://192.168.0.243:9090/nuget/Hardware": {},
+        "http://192.168.0.243:9090/nuget/NuGet": {},
+        "http://192.168.0.243:9090/nuget/Sigma.Framework": {},
+        "http://192.168.0.243:9090/nuget/ThirdParty": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\Users\\Andreas\\Desktop\\C_Sharp_Projects\\Abr.SudokuSolver\\Abr.SudokuSolver.Logik\\Abr.SudokuSolver.Logik.csproj": {
+              "projectPath": "C:\\Users\\Andreas\\Desktop\\C_Sharp_Projects\\Abr.SudokuSolver\\Abr.SudokuSolver.Logik\\Abr.SudokuSolver.Logik.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

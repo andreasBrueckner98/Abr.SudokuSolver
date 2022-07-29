@@ -1,0 +1,150 @@
+﻿<Window x:Class="Abr.SudokuSolver.Ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Abr.SudokuSolver.Ui"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <Style TargetType="TextBox">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="TextAlignment" Value="Center"/>
+
+                <Style.Triggers>
+                    <Trigger Property="Text" Value="0">
+                        <Setter Property="Background" Value="Red"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+
+        <TextBox Grid.Column="0" Grid.Row="0" Text="{Binding Arr[0][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Arr[0][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="0" Text="{Binding Arr[0][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="0" Text="{Binding Arr[0][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="0" Text="{Binding Arr[0][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="0" Text="{Binding Arr[0][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="0" Text="{Binding Arr[0][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="0" Text="{Binding Arr[0][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="0" Text="{Binding Arr[0][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="1" Text="{Binding Arr[1][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Arr[1][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="1" Text="{Binding Arr[1][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="1" Text="{Binding Arr[1][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="1" Text="{Binding Arr[1][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="1" Text="{Binding Arr[1][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="1" Text="{Binding Arr[1][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="1" Text="{Binding Arr[1][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="1" Text="{Binding Arr[1][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="2" Text="{Binding Arr[2][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Arr[2][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="2" Text="{Binding Arr[2][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="2" Text="{Binding Arr[2][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="2" Text="{Binding Arr[2][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="2" Text="{Binding Arr[2][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="2" Text="{Binding Arr[2][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="2" Text="{Binding Arr[2][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="2" Text="{Binding Arr[2][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="4" Text="{Binding Arr[3][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding Arr[3][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="4" Text="{Binding Arr[3][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="4" Text="{Binding Arr[3][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="4" Text="{Binding Arr[3][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="4" Text="{Binding Arr[3][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="4" Text="{Binding Arr[3][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="4" Text="{Binding Arr[3][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="4" Text="{Binding Arr[3][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="5" Text="{Binding Arr[4][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="5" Text="{Binding Arr[4][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="5" Text="{Binding Arr[4][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="5" Text="{Binding Arr[4][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="5" Text="{Binding Arr[4][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="5" Text="{Binding Arr[4][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="5" Text="{Binding Arr[4][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="5" Text="{Binding Arr[4][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="5" Text="{Binding Arr[4][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="6" Text="{Binding Arr[5][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="6" Text="{Binding Arr[5][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="6" Text="{Binding Arr[5][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="6" Text="{Binding Arr[5][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="6" Text="{Binding Arr[5][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="6" Text="{Binding Arr[5][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="6" Text="{Binding Arr[5][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="6" Text="{Binding Arr[5][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="6" Text="{Binding Arr[5][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="8" Text="{Binding Arr[6][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="8" Text="{Binding Arr[6][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="8" Text="{Binding Arr[6][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="8" Text="{Binding Arr[6][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="8" Text="{Binding Arr[6][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="8" Text="{Binding Arr[6][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="8" Text="{Binding Arr[6][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="8" Text="{Binding Arr[6][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="8" Text="{Binding Arr[6][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="9" Text="{Binding Arr[7][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="9" Text="{Binding Arr[7][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="9" Text="{Binding Arr[7][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="9" Text="{Binding Arr[7][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="9" Text="{Binding Arr[7][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="9" Text="{Binding Arr[7][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="9" Text="{Binding Arr[7][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="9" Text="{Binding Arr[7][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="9" Text="{Binding Arr[7][8]}"/>
+
+        <TextBox Grid.Column="0" Grid.Row="10" Text="{Binding Arr[8][0]}"/>
+        <TextBox Grid.Column="1" Grid.Row="10" Text="{Binding Arr[8][1]}"/>
+        <TextBox Grid.Column="2" Grid.Row="10" Text="{Binding Arr[8][2]}"/>
+        <TextBox Grid.Column="4" Grid.Row="10" Text="{Binding Arr[8][3]}"/>
+        <TextBox Grid.Column="5" Grid.Row="10" Text="{Binding Arr[8][4]}"/>
+        <TextBox Grid.Column="6" Grid.Row="10" Text="{Binding Arr[8][5]}"/>
+        <TextBox Grid.Column="8" Grid.Row="10" Text="{Binding Arr[8][6]}"/>
+        <TextBox Grid.Column="9" Grid.Row="10" Text="{Binding Arr[8][7]}"/>
+        <TextBox Grid.Column="10" Grid.Row="10" Text="{Binding Arr[8][8]}"/>
+
+        <Border Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="11" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Margin="0 5"/>
+        <Border Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="11" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Margin="0 5"/>
+
+        <Border Grid.Column="3" Grid.Row="0" Grid.RowSpan="11" BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Center" Margin="5 0"/>
+        <Border Grid.Column="7" Grid.Row="0" Grid.RowSpan="11" BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Center" Margin="5 0"/>
+
+        <Button Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="13" Content="Solve!" Click="Button_Click"/>
+    </Grid>
+</Window>

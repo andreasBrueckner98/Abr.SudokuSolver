@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "40f6b61c-f33b-46dc-ba17-e962987f059a": {
+      "ProjectGuid": "40f6b61c-f33b-46dc-ba17-e962987f059a",
+      "DisplayName": "Abr.SudokuSolver.Logik",
+      "ColorIndex": 0
+    },
+    "134ec3b1-e46a-4d41-bf92-ad93643b3e47": {
+      "ProjectGuid": "134ec3b1-e46a-4d41-bf92-ad93643b3e47",
+      "DisplayName": "Abr.SudokuSolver.Test",
+      "ColorIndex": 1
+    },
+    "cab22e04-6afe-4a20-8721-b1bce966194a": {
+      "ProjectGuid": "cab22e04-6afe-4a20-8721-b1bce966194a",
+      "DisplayName": "Abr.SudokuSolver.Ui",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
